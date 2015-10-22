@@ -1,0 +1,13 @@
+//
+// Prefix header for all source files of the 'HGPageScrollViewSample' target in the 'HGPageScrollViewSample' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
+
+#define DOWNLOAD_NOTIFICATION @"downloadnotidication"
+#define FILE_NOTIFICATION @"filenotidication"
+
+#define DOCUMENT_PATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0]

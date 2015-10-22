@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BrowserViewController">
+            <connections>
+                <outlet property="editToolbar" destination="HOk-B0-IeF" id="AD0-M3-4Or"/>
+                <outlet property="toolbar" destination="4ii-wM-oKj" id="tPx-MS-DwM"/>
+                <outlet property="view" destination="6" id="7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="12">
+                    <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items/>
+                </toolbar>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="4ii-wM-oKj">
+                    <rect key="frame" x="0.0" y="372" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="rewind" id="faY-ph-rTv">
+                            <connections>
+                                <action selector="btnBack" destination="-1" id="YTF-mo-oYi"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="2ce-M2-Frh"/>
+                        <barButtonItem style="plain" systemItem="fastForward" id="TDc-WU-BYf">
+                            <connections>
+                                <action selector="goForward" destination="-1" id="UUD-JX-VF5"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="RNW-la-OuP"/>
+                        <barButtonItem style="plain" systemItem="action" id="Mdw-Q6-nkK"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="75d-9C-uKQ"/>
+                        <barButtonItem style="plain" systemItem="bookmarks" id="Sw8-U7-lv2"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="hJh-LL-P3f"/>
+                        <barButtonItem style="plain" systemItem="add" id="6xG-GF-7WP">
+                            <connections>
+                                <action selector="didClickBrowsePages:" destination="-1" id="dEW-1p-AbO"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Nip-jK-Kd0"/>
+                        <barButtonItem systemItem="organize" id="Lzl-nd-dNW"/>
+                    </items>
+                </toolbar>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="HOk-B0-IeF">
+                    <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="New Page" id="4Hy-Ey-GFo">
+                            <connections>
+                                <action selector="didClickAddPage:" destination="-1" id="okz-5O-veL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="fSo-Qx-T5x"/>
+                        <barButtonItem title="Done" id="QKG-cr-pgj">
+                            <connections>
+                                <action selector="didClickBrowsePages:" destination="-1" id="uIh-os-EKu"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
